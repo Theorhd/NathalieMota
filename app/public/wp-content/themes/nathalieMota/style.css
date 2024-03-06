@@ -83,7 +83,7 @@ footer a {
 .contact-overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.3764705882);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;

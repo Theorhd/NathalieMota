@@ -11,8 +11,6 @@
 
 get_header();
 
-	get_template_part( 'template-parts/contact' );
-
 /* Start the Loop */
 while ( have_posts() ) :
 	the_post();
