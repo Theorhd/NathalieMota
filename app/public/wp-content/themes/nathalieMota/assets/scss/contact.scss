@@ -1,0 +1,43 @@
+.contact-overlay {
+    position: fixed;
+    background:#00000060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .popup-contact {
+        max-width: 680px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 3em;
+        background-color: white;
+        .popup-form p label span input {
+            border: 1px solid #B8BBC2;
+            border-radius: 8px;
+            width: 263px;
+            height: 40px;
+            padding-left: 10px;
+        }
+        .popup-form p label span textarea {
+            border: 1px solid #B8BBC2;
+            border-radius: 8px;
+            width: 263px;
+            height: 100px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .popup-form p input[type=submit] {
+            width: 275px;
+            height: 50px;
+            background-color: #D8D8D8;
+            border: none;
+            border-radius: 2px;
+            color: black;
+            text-align: center;
+        }
+    }
+}
