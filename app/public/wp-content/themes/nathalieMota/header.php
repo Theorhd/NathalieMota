@@ -12,18 +12,13 @@
 
         <div class="site-branding">
             <?php
-            if ( is_front_page() && is_home() ) : ?>
-                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            <?php else : ?>
-                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-            <?php
-            endif;
-
-            $description = get_bloginfo( 'description', 'display' );
-            if ( $description || is_customize_preview() ) : ?>
-                <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-            <?php
-            endif; ?>
+                $logo = get_theme_mod('theme_logo');
+                if ($logo) {
+                    echo '<img src="' . esc_url($logo) . '" alt="' . get_bloginfo('name') . '">';
+                } else {
+                    echo '<h1>' . get_bloginfo('name') . '</h1>';
+                }
+            ?>
         </div><!-- .site-branding -->
 
         <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
