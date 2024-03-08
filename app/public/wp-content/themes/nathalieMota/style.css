@@ -179,11 +179,40 @@ footer a {
 .content-container .right-side-paysage {
   width: 45%;
   margin-left: 20px;
-}
-.content-container .right-side-paysage img {
-  width: 100%;
+  overflow: hidden;
+  background-size: cover;
 }
 
+@media screen and (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .content-container .left-side-paysage {
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  .content-container .left-side-paysage h2 {
+    margin-top: 20px;
+  }
+  .content-container .right-side-paysage {
+    width: 95%;
+    height: 460px;
+    max-height: 460px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .content-container .left-side-paysage h2 {
+    font-size: 36px;
+  }
+  .content-container .left-side-paysage .ctaphoto-contact {
+    flex-direction: column;
+  }
+}
 /**/
 /* Général */
 .alsoLike-container {
@@ -249,11 +278,40 @@ footer a {
 .content-container .right-side-portrait {
   width: 45%;
   margin-left: 20px;
-}
-.content-container .right-side-portrait img {
-  width: 100%;
+  overflow: hidden;
+  background-size: cover;
 }
 
+@media screen and (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .content-container .left-side-portrait {
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  .content-container .left-side-portrait h2 {
+    margin-top: 20px;
+  }
+  .content-container .right-side-portrait {
+    width: 95%;
+    height: 660px;
+    max-height: 660px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .content-container .left-side-portrait h2 {
+    font-size: 36px;
+  }
+  .content-container .left-side-portrait .ctaphoto-contact {
+    flex-direction: column;
+  }
+}
 /**/
 /*<<<<<<<< ------ >>>>>>>>*/
 /*<<<<<<<< FOOTER >>>>>>>>*/
