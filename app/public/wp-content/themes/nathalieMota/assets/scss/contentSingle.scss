@@ -27,7 +27,7 @@
             h5 {
                 font-family: 'poppins', sans-serif;
                 font-weight: 300;
-                margin-right: 140px;
+                margin-right: 20%;
             }
             button {
                 background-color: #d8d8d8;
@@ -37,6 +37,10 @@
                 padding: 18px 111px;
                 font-family: 'Space Mono', sans-serif;
                 font-size: 12px;
+                &:hover {
+                    background-color: #adadad;
+                    transition: 0.5s;
+                }
             }
         }
     }
@@ -94,7 +98,7 @@
         h5 {
             font-family: 'poppins', sans-serif;
             font-weight: 300;
-            margin-right: 140px;
+            margin-right: 20%;
         }
         button {
             background-color: #d8d8d8;
@@ -104,6 +108,10 @@
             padding: 18px 111px;
             font-family: 'Space Mono', sans-serif;
             font-size: 12px;
+            &:hover {
+                background-color: #adadad;
+                transition: 0.2s;
+            }
         }
     }
     .right-side-portrait {

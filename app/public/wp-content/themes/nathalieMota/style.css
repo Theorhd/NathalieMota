@@ -161,7 +161,7 @@ footer a {
 .content-container .left-side-paysage .ctaphoto-contact h5 {
   font-family: "poppins", sans-serif;
   font-weight: 300;
-  margin-right: 140px;
+  margin-right: 20%;
 }
 .content-container .left-side-paysage .ctaphoto-contact button {
   background-color: #d8d8d8;
@@ -171,6 +171,10 @@ footer a {
   padding: 18px 111px;
   font-family: "Space Mono", sans-serif;
   font-size: 12px;
+}
+.content-container .left-side-paysage .ctaphoto-contact button:hover {
+  background-color: #adadad;
+  transition: 0.5s;
 }
 .content-container .right-side-paysage {
   width: 45%;
@@ -227,7 +231,7 @@ footer a {
 .content-container .ctaphoto-contact h5 {
   font-family: "poppins", sans-serif;
   font-weight: 300;
-  margin-right: 140px;
+  margin-right: 20%;
 }
 .content-container .ctaphoto-contact button {
   background-color: #d8d8d8;
@@ -237,6 +241,10 @@ footer a {
   padding: 18px 111px;
   font-family: "Space Mono", sans-serif;
   font-size: 12px;
+}
+.content-container .ctaphoto-contact button:hover {
+  background-color: #adadad;
+  transition: 0.2s;
 }
 .content-container .right-side-portrait {
   width: 45%;
