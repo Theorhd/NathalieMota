@@ -1,5 +1,5 @@
 
-<?php get_template_part( 'template-parts/contact' ); ?>
+<?php get_template_part( 'template-parts/modale/contact' ); ?>
 
 </div><!-- #content -->
 

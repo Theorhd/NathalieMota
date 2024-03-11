@@ -38,3 +38,131 @@ Stack trace:
 [07-Mar-2024 02:20:24 UTC] PHP Warning:  Undefined array key 1 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 32
 [08-Mar-2024 00:43:08 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 36
 [08-Mar-2024 00:43:08 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 36
+[08-Mar-2024 14:55:54 UTC] PHP Warning:  Undefined array key 0 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 61
+[08-Mar-2024 14:56:26 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 18
+[08-Mar-2024 14:56:26 UTC] PHP Warning:  Undefined array key 0 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 61
+[08-Mar-2024 14:56:49 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 19
+[08-Mar-2024 14:56:49 UTC] PHP Warning:  Undefined array key 0 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 62
+[08-Mar-2024 14:56:50 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 19
+[08-Mar-2024 14:56:50 UTC] PHP Warning:  Undefined array key 0 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 62
+[08-Mar-2024 14:57:28 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 19
+[08-Mar-2024 14:57:28 UTC] PHP Warning:  Undefined array key 0 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 62
+[08-Mar-2024 14:57:29 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 19
+[08-Mar-2024 14:57:29 UTC] PHP Warning:  Undefined array key 0 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 62
+[08-Mar-2024 15:02:10 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "all" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php:19
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(792): require()
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(725): load_template('C:\\Users\\theor\\...', false, Array)
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\single.php(16): get_template_part('template-parts/...')
+#4 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\theor\\...')
+#5 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-blog-header.php(19): require_once('C:\\Users\\theor\\...')
+#6 C:\Users\theor\Local Sites\nathaliemota\app\public\index.php(17): require('C:\\Users\\theor\\...')
+#7 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 19
+[08-Mar-2024 15:02:18 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Term could not be converted to string in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php:62
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(792): require()
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(725): load_template('C:\\Users\\theor\\...', false, Array)
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\single.php(16): get_template_part('template-parts/...')
+#4 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\theor\\...')
+#5 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-blog-header.php(19): require_once('C:\\Users\\theor\\...')
+#6 C:\Users\theor\Local Sites\nathaliemota\app\public\index.php(17): require('C:\\Users\\theor\\...')
+#7 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 62
+[08-Mar-2024 15:14:07 UTC] PHP Warning:  file_put_contents(C:\Users\theor\Local Sites\nathaliemota\app\public/wp-content/themes/nathalieMota/acf-json/group_65e915cd562b4.json): Failed to open stream: No such file or directory in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\plugins\advanced-custom-fields\includes\local-json.php on line 448
+[08-Mar-2024 15:31:16 UTC] PHP Parse error:  syntax error, unexpected identifier "est" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 61
+[08-Mar-2024 15:32:11 UTC] PHP Parse error:  syntax error, unexpected identifier "get_previous_image_link", expecting "," or ";" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 44
+[08-Mar-2024 15:32:50 UTC] PHP Parse error:  syntax error, unexpected identifier "get_previous_image_link", expecting "," or ";" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 44
+[08-Mar-2024 16:33:10 UTC] PHP Warning:  Attempt to read property "term_id" on string in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 30
+[11-Mar-2024 07:11:03 UTC] PHP Warning:  Attempt to read property "term_id" on string in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 30
+[11-Mar-2024 10:57:15 UTC] PHP Warning:  Undefined variable $post in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 10:57:15 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 10:57:15 UTC] PHP Warning:  Undefined variable $post in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 48
+[11-Mar-2024 10:57:15 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 48
+[11-Mar-2024 10:57:15 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "get_" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php:60
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-settings.php(611): include()
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-config.php(103): require_once('C:\\Users\\theor\\...')
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-load.php(50): require_once('C:\\Users\\theor\\...')
+#3 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\theor\\...')
+#4 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 60
+[11-Mar-2024 10:57:15 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[11-Mar-2024 10:57:15 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[11-Mar-2024 10:57:16 UTC] PHP Warning:  Undefined variable $post in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 10:57:16 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 10:57:16 UTC] PHP Warning:  Undefined variable $post in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 48
+[11-Mar-2024 10:57:16 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 48
+[11-Mar-2024 10:57:16 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "get_" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php:60
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-settings.php(611): include()
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-config.php(103): require_once('C:\\Users\\theor\\...')
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-load.php(50): require_once('C:\\Users\\theor\\...')
+#3 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-blog-header.php(13): require_once('C:\\Users\\theor\\...')
+#4 C:\Users\theor\Local Sites\nathaliemota\app\public\index.php(17): require('C:\\Users\\theor\\...')
+#5 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 60
+[11-Mar-2024 10:57:16 UTC] PHP Warning:  Undefined variable $post in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 10:57:16 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 10:57:16 UTC] PHP Warning:  Undefined variable $post in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 48
+[11-Mar-2024 10:57:16 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 48
+[11-Mar-2024 10:57:16 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "get_" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php:60
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-settings.php(611): include()
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-config.php(103): require_once('C:\\Users\\theor\\...')
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-load.php(50): require_once('C:\\Users\\theor\\...')
+#3 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\theor\\...')
+#4 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 60
+[11-Mar-2024 11:00:21 UTC] PHP Warning:  Undefined variable $post in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 11:00:21 UTC] PHP Warning:  Attempt to read property "id" on null in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 11:00:21 UTC] PHP Warning:  Undefined variable $post in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 11:00:21 UTC] PHP Warning:  Attempt to read property "id" on null in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 46
+[11-Mar-2024 11:22:58 UTC] PHP Fatal error:  Uncaught TypeError: ltrim(): Argument #1 ($string) must be of type string, array given in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\formatting.php:4494
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\formatting.php(4494): ltrim(Array)
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php(54): esc_url(Array)
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(792): require('C:\\Users\\theor\\...')
+#3 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(725): load_template('C:\\Users\\theor\\...', false, Array)
+#4 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#5 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\single.php(16): get_template_part('template-parts/...')
+#6 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\theor\\...')
+#7 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-blog-header.php(19): require_once('C:\\Users\\theor\\...')
+#8 C:\Users\theor\Local Sites\nathaliemota\app\public\index.php(17): require('C:\\Users\\theor\\...')
+#9 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\formatting.php on line 4494
+[11-Mar-2024 11:34:49 UTC] PHP Warning:  Undefined variable $images_url in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 62
+[11-Mar-2024 11:40:13 UTC] PHP Warning:  Undefined variable $images_url in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 62
+[11-Mar-2024 11:46:51 UTC] PHP Warning:  Undefined array key 1 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 54
+[11-Mar-2024 11:46:51 UTC] PHP Warning:  Undefined array key 1 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 54
+[11-Mar-2024 11:47:00 UTC] PHP Warning:  Undefined array key 1 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 54
+[11-Mar-2024 11:49:15 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php:51
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(792): require()
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(725): load_template('C:\\Users\\theor\\...', false, Array)
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\single.php(16): get_template_part('template-parts/...')
+#4 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\theor\\...')
+#5 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-blog-header.php(19): require_once('C:\\Users\\theor\\...')
+#6 C:\Users\theor\Local Sites\nathaliemota\app\public\index.php(17): require('C:\\Users\\theor\\...')
+#7 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 51
+[11-Mar-2024 11:50:30 UTC] PHP Warning:  Undefined array key 1 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 53
+[11-Mar-2024 11:53:57 UTC] PHP Warning:  Undefined array key 1 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 54
+[11-Mar-2024 11:55:47 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php:57
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(792): require()
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template.php(725): load_template('C:\\Users\\theor\\...', false, Array)
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\single.php(16): get_template_part('template-parts/...')
+#4 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\theor\\...')
+#5 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-blog-header.php(19): require_once('C:\\Users\\theor\\...')
+#6 C:\Users\theor\Local Sites\nathaliemota\app\public\index.php(17): require('C:\\Users\\theor\\...')
+#7 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 57
+[11-Mar-2024 11:56:22 UTC] PHP Warning:  Undefined array key 1 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 57
+[11-Mar-2024 11:58:39 UTC] PHP Fatal error:  Cannot use [] for reading in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 54
+[11-Mar-2024 11:58:45 UTC] PHP Warning:  Undefined array key 1 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 54
+[11-Mar-2024 12:00:36 UTC] PHP Warning:  Undefined array key 1 in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-single.php on line 54
