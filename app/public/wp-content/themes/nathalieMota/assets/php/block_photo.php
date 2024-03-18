@@ -102,3 +102,20 @@ if ($categories) {
     let refphotoJS = <?php echo json_encode($refphoto); ?>;
 /*^^^^^^____________ Code fonctionnement Single Page  ____________^^^^^^>*/
 </script>
+<?php
+/* Page Accueil */
+// Obtient un post aléatoire
+$random_posts = get_posts(array(
+    'post_type' => 'photo',
+    'posts_per_page' => 1,
+    'orderby' => 'rand',
+));
+
+if ($random_posts) {
+    $random_post_id = $random_posts[0]->ID;
+    $random_post_image = get_field('image', $random_post_id)['url'];
+}
+
+?>
+
+

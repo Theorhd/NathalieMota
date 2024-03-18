@@ -14,6 +14,8 @@
  * @since nathalieMota 1.0
  */
 
- get_header();
+get_header();
 
- get_footer();
+get_template_part( 'template-parts/content/content-page' );
+
+get_footer();
