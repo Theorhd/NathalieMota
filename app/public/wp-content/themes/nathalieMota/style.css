@@ -142,12 +142,12 @@ footer a {
 .content-container {
   display: flex;
   justify-content: center;
+  align-items: end;
   margin-top: 50px;
   border-bottom: 1px solid #000;
 }
 .content-container .left-side-paysage {
   width: 45%;
-  margin-top: 145px;
 }
 .content-container .left-side-paysage h2 {
   font-weight: 600;
@@ -206,7 +206,17 @@ footer a {
 .content-container .right-side-paysage .nextPhoto .arrows {
   margin-right: 17px;
 }
+.content-container .right-side-paysage .nextPhoto .arrows a {
+  text-decoration: none;
+  color: #000;
+}
+.content-container .right-side-paysage .nextPhoto .arrows a:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
 .content-container .right-side-paysage .nextPhoto .nextImage {
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 7em;
   max-width: 81px;
@@ -270,7 +280,6 @@ footer a {
 /* Format : Portrait */
 .content-container .left-side-portrait {
   width: 45%;
-  margin-top: 460px;
 }
 .content-container .left-side-portrait h2 {
   font-weight: 600;
@@ -309,14 +318,13 @@ footer a {
   transition: 0.2s;
 }
 .content-container .right-side-portrait {
-  width: 27%;
+  width: 35%;
   margin-left: 20px;
   overflow: hidden;
 }
 .content-container .right-side-portrait .post-image-portrait {
-  width: 100%;
+  width: 35vw;
   height: 800px;
-  max-width: 530px;
   max-height: 800px;
   background-size: cover;
   background-position: center;
@@ -331,7 +339,17 @@ footer a {
 .content-container .right-side-portrait .nextPhoto .arrows {
   margin-right: 17px;
 }
+.content-container .right-side-portrait .nextPhoto .arrows a {
+  text-decoration: none;
+  color: #000;
+}
+.content-container .right-side-portrait .nextPhoto .arrows a:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
 .content-container .right-side-portrait .nextPhoto .nextImage {
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 7em;
   max-width: 81px;
@@ -356,6 +374,9 @@ footer a {
     height: 660px;
     max-height: 660px;
     margin-top: 20px;
+  }
+  .content-container .right-side-portrait .post-image-portrait {
+    width: 95vw;
   }
 }
 @media screen and (max-width: 425px) {

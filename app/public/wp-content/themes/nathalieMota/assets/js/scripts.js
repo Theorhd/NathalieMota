@@ -1,5 +1,5 @@
 /* Gestion Apparition/Disparition Modale Contact */
-$(document).ready(function () {
+jQuery(document).ready(function () {
     function openContact() { // Fonction pour ouvrir la modale
         jQuery('.contact-overlay').fadeIn().animate({
             opacity: 1
@@ -25,8 +25,3 @@ $(document).ready(function () {
     }
 });
 /**/
-/* Attribution des images */
-jQuery(document).ready(function () {
-    jQuery('.alsoLike-photo1').css('background-image', 'url(' + sameImage1 + ')');
-    jQuery('.alsoLike-photo2').css('background-image', 'url(' + sameImage2 + ')');
-});
