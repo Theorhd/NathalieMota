@@ -51,7 +51,7 @@ include './wp-content\themes\nathalieMota\assets\php\block_photo.php';
     <?php
 $args = array(
     'post_type' => 'photo', 
-    'posts_per_page' => -1,
+    'posts_per_page' => 8,
 );
 
 $custom_query = new WP_Query($args);
@@ -72,9 +72,12 @@ if ($custom_query->have_posts()) :
     // Réinitialiser les données de post
     wp_reset_postdata();
 else :
-    // Aucun post trouvé
-    echo 'Aucune image trouvée.';
+    // Si aucun post trouvé
+    echo 'Aucune photo trouvée.';
 endif;
 ?>
+    </div>
+    <div class="load-more">
+        <button id="load-more-photos">Afficher plus</button>
     </div>
 </div>

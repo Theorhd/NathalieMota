@@ -9,11 +9,14 @@
     width: 100%;
     height: 100%;
     .popup-header {
-        width: 100%;
+        width: 135%;
         height: 80px;
         overflow: hidden;
         background-image: url(../nathalieMota/assets/images/Contactheader.png);
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        margin-bottom: 20px;
     }
     .popup-contact {
         max-width: 680px;
@@ -30,6 +33,7 @@
             width: 263px;
             height: 40px;
             padding-left: 10px;
+            margin-bottom: 8px;
         }
         .popup-form p label span textarea {
             border: 1px solid #B8BBC2;
@@ -47,6 +51,7 @@
             border-radius: 2px;
             color: black;
             text-align: center;
+            margin-top: 8px;
         }
     }
 }
