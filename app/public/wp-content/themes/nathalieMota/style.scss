@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    max-width: 1440px;
+    margin: 0 auto; // Centrer le body horizontalement
+}
 /*<<<<<<<< ------ >>>>>>>>*/
 /*<<<<<<<< FONTS >>>>>>>>*/
 @import 'assets/scss/fonts.scss';

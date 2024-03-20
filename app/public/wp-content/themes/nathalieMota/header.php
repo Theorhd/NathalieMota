@@ -20,9 +20,21 @@
             ?>
         </div><!-- .site-branding -->
 
-        <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
-        
+        <button class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="menuHeader">
+            <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+        </div>
+
         </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
 
     <div id="content" class="site-content">
+
+        <div class="mobile-menu">   
+            <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+        </div>

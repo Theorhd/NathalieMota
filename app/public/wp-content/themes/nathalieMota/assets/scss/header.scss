@@ -27,3 +27,85 @@
         }
     }
 }
+
+.menu-toggle {
+    display: none; /* Cacher le bouton par défaut */
+    cursor: pointer;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    .bar {
+        display: flex;
+        flex-direction: column;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px auto;
+        transition: all 0.3s ease;
+    }
+    &.open {
+        .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+}
+
+@keyframes top {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0;
+    } 
+}
+
+.mobile-menu {
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #e00000;
+    transform: translateY(-100%);
+    overflow: hidden;
+    &.open {
+        display: flex;
+        transform: translateY(0);
+    }
+    ul {
+        list-style: none;
+        li {
+            margin: 50px 0;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 44px;
+                font-family: 'Space Mono', sans-serif;
+                font-weight: 400;
+            }
+        }
+    
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .menuHeader {
+        display: none;
+    }
+    .main-navigation {
+        justify-content: space-around;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}

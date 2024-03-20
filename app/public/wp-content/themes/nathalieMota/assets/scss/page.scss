@@ -16,7 +16,7 @@
     }
 }
 .main-page {
-    margin: 20px 250px;
+    margin: 20px 150px;
     overflow: hidden;
     .filter-container {
         display: flex;
@@ -24,6 +24,9 @@
         margin-bottom: 20px;
         .filter-left {
             display: flex;
+        }
+        .filter-formats {
+            margin-left: 15px;
         }
         .filterstyle {
             width: 100%;
