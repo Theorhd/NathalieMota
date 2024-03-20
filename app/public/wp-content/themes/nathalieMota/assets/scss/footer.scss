@@ -23,3 +23,13 @@ footer {
         }
     }
 }
+@media screen and (max-width: 425px) {
+    footer {
+        .menu-footer-container {
+            ul#menu-footer {
+                margin-top: 40px;
+                flex-direction: column;
+            }
+        }
+    }
+}
