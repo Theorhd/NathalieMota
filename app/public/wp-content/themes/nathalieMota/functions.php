@@ -1,10 +1,10 @@
 <?php
 // Styles & Scripts
 function load_scripts() {
-  wp_dequeue_script('jquery-migrate-js');
-  wp_enqueue_script( 'jq3.7.1', 'https://code.jquery.com/jquery-3.7.1.min.js', array(), '3.7.1', false);
-  wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-  wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js' , array(), '1.0', false);
+  wp_dequeue_script('jquery-migrate-js'); // Deregister jQuery Migrate de WordPress
+  wp_enqueue_script( 'jq3.7.1', 'https://code.jquery.com/jquery-3.7.1.min.js', array(), '3.7.1', false); // jQuery 3.7.1
+  wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all'); // Main Stylesheet
+  wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js' , array(), '1.0', false); // Main Scripts
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
 // Menus
@@ -45,6 +45,7 @@ function load_google_fonts() {
 }
 add_action('wp_enqueue_scripts', 'load_google_fonts');
 // Ajax
+/**!! Dépendance a ajax_pagination.js !!**/
 function load_ajax_pagination() {
   wp_enqueue_script('ajax-pagination', get_template_directory_uri() . '/assets/js/ajax_pagination.js', array(), '1.0', false);
   wp_localize_script('ajax-pagination', 'ajaxpagination', array(
@@ -53,66 +54,62 @@ function load_ajax_pagination() {
   ));
 }
 add_action('wp_enqueue_scripts', 'load_ajax_pagination');
-// Pagination
+  // Pagination
 add_action('wp_ajax_load_more_photos', 'load_more_photos');
 add_action('wp_ajax_nopriv_load_more_photos', 'load_more_photos');
-
+  // Chargement des photos page accueil et filtres AJAX
 function load_more_photos() {
-    $page = $_POST['page'];
-    $categories = $_POST['categories'];
-    $formats = $_POST['formats'];
-    $sort = $_POST['sort'];
+  $page = $_POST['page'];
+  $categories = $_POST['categories'];
+  $formats = $_POST['formats'];
+  $sort = $_POST['sort'];
 
-    $args = array(
-        'post_type' => 'photo',
-        'posts_per_page' => 8,
-        'paged' => $page,
-    );
-
-    if($categories != 'all') {
-        $args['tax_query'] = array(
-            array(
-                'taxonomy' => 'category',
-                'field' => 'slug',
-                'terms' => $categories,
-            ),
-        );
+  $args = array(
+      'post_type'      => 'photo',
+      'posts_per_page' => 8,
+      'paged'          => $page,
+  );
+  // Filtres
+  if ($categories != 'all') { // Filtre par catégories
+      $args['tax_query'] = array(
+          array(
+              'taxonomy' => 'category',
+              'field'    => 'slug',
+              'terms'    => $categories,
+          ),
+      );
+  }
+  if ($formats != 'all')  {  // Filtre par formats
+      $args['meta_query'] = array(
+          array(
+              'key'     => 'format',
+              'value'   => $formats,
+              'compare' => '=',
+          ),
+      );
+  }
+  if ($sort != 'all') {
+    if ($sort == 'date+') {
+        $args['orderby'] = 'date';
+        $args['order']   = 'DESC';
+    } elseif ($sort == 'date-') {
+        $args['orderby'] = 'date';
+        $args['order']   = 'ASC';
     }
-
-    if($formats != 'all') {
-        $args['meta_query'] = array(
-            array(
-                'key' => 'format',
-                'value' => $formats,
-                'compare' => '=',
-            ),
-        );
-    }
-
-    if($sort != 'all') {
-        $args['orderby'] = $sort;
-        if($sort == 'date') {
-            $args['order'] = 'DESC';
-        } else {
-            $args['order'] = 'ASC';
-        }
-    }
-
-    $custom_query = new WP_Query($args);
-
-    if ($custom_query->have_posts()) :
-        while ($custom_query->have_posts()) :
-            $custom_query->the_post();
-            $image_url = get_field('image')['url'];
-            $post_url = get_permalink();
-            if ($image_url) {
-                echo '<a href="' . $post_url . '"><img src="' . esc_url($image_url) . '" alt="' . esc_attr(get_the_title()) . '"></a>';
-            }
-        endwhile;
-        wp_reset_postdata();
-    else :
-        echo '';
-    endif;
-
-    wp_die();
+}
+  $custom_query = new WP_Query($args);
+  if ($custom_query->have_posts()) :
+      while ($custom_query->have_posts()) :
+          $custom_query->the_post();
+          $image_url = get_field('image')['url'];
+          $post_url  = get_permalink();
+          if ($image_url) {
+              echo '<a href="' . $post_url . '"><img src="' . esc_url($image_url) . '" alt="' . esc_attr(get_the_title()) . '"></a>';
+          }
+      endwhile;
+      wp_reset_postdata();
+  else :
+      echo '';
+  endif;
+  wp_die();
 }

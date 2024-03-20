@@ -1,6 +1,12 @@
 jQuery(document).ready(function($) {
     var page = 1;
     var canLoad = true;
+    // Gestionnaire d'événement pour les changements de filtres
+    $('.filterstyle').change(function() {
+        // Réinitialiser la page à 1 à chaque changement de filtre
+        page = 1;
+        loadPhotos();
+    });
     $('#load-more-photos').on('click', function() {
         if(canLoad) {
             page++;
@@ -24,7 +30,13 @@ jQuery(document).ready(function($) {
             },
             success: function(response) {
                 if(response) {
-                    $('.posts-container').append(response);
+                    if (page === 1) {
+                        // Si c'est la première page, vider le contenu existant
+                        $('.posts-container').html(response);
+                    } else {
+                        // Ajouter les nouvelles photos à la fin des photos existantes
+                        $('.posts-container').append(response);
+                    }
                     $('#load-more-photos').text('Afficher plus');
                     canLoad = true;
                 } else {
@@ -36,4 +48,6 @@ jQuery(document).ready(function($) {
             }
         });
     }
+    // Charger les photos au chargement initial de la page
+    loadPhotos();
 });

@@ -20,9 +20,8 @@ $same_image2_link = '';
 // Obtient l'ID de l'article actuel
 $current_post_id = get_the_ID();
 
-// Requête pour récupérer le post suivant avec l'image
+//* Requête pour récupérer le post suivant avec l'image *//
 $next_post = get_next_post();
-
 if ($next_post) {
     $next_post_id = $next_post->ID;
     $next_post_image = get_field('image', $next_post_id)['url'];
@@ -42,16 +41,15 @@ else { // Si next post n'existe pas alors montré le premier article
     $next_post_url = get_permalink($next_post_id);
 }
 
-// Requête pour récupérer le post précédent avec l'image
+//* Requête pour récupérer le post précédent avec l'image *//
 $prev_post = get_previous_post();
-
 if ($prev_post) {
     $prev_post_id = $prev_post->ID;
     $prev_post_image = get_field('image', $prev_post_id)['url'];
-    // Get the URL of the previous post
+    // Obtient l'url du post précédent
     $prev_post_url = get_permalink($prev_post_id);
 }
-
+//* Chargement des photos associées aux images *//
 if ($categories) {
     // Obtient le slug de la première catégorie
     $category_slug = $categories[0]->slug;
@@ -103,19 +101,15 @@ if ($categories) {
 /*^^^^^^____________ Code fonctionnement Single Page  ____________^^^^^^>*/
 </script>
 <?php
+// Chargement d'une image aléoatoire pour heroHeader
 /* Page Accueil */
-// Obtient un post aléatoire
 $random_posts = get_posts(array(
     'post_type' => 'photo',
     'posts_per_page' => 1,
     'orderby' => 'rand',
 ));
-
 if ($random_posts) {
     $random_post_id = $random_posts[0]->ID;
     $random_post_image = get_field('image', $random_post_id)['url'];
 }
-
 ?>
-
-

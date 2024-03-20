@@ -13,7 +13,7 @@
             <?php
                 $logo = get_theme_mod('theme_logo');
                 if ($logo) {
-                    echo '<img src="' . esc_url($logo) . '" alt="' . get_bloginfo('name') . '">';
+                    echo '<a href="' . get_home_url() . '" ><img src="' . esc_url($logo) . '" alt="' . get_bloginfo('name') . '"></a>';
                 } else {
                     echo '<h1>' . get_bloginfo('name') . '</h1>';
                 }
