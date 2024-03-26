@@ -5,7 +5,7 @@
 }
 body {
     max-width: 1440px;
-    margin: 0 auto; // Centrer le body horizontalement
+    margin: 0 auto; 
 }
 /*<<<<<<<< ------ >>>>>>>>*/
 /*<<<<<<<< FONTS >>>>>>>>*/
@@ -22,6 +22,9 @@ body {
 /*<<<<<<<< ------ >>>>>>>>*/
 /*<<<<<<<< FRONT PAGE >>>>>>>>*/
 @import 'assets/scss/page.scss';
+/*<<<<<<<< ------ >>>>>>>>*/
+/*<<<<<<<< LIGHTBOX >>>>>>>>*/
+@import 'assets/scss/lightbox.scss';
 /*<<<<<<<< ------ >>>>>>>>*/
 /*<<<<<<<< FOOTER >>>>>>>>*/
 @import 'assets/scss/footer.scss';

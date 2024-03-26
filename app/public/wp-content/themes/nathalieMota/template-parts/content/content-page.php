@@ -10,7 +10,8 @@
 
 ?>
 
-<?php
+<?php 
+// Besoin de charger le fichier block_photo.php pour obtenir l'image aléatoire pour le heroHeader
 include './wp-content\themes\nathalieMota\assets\php\block_photo.php'; 
 ?>
 
