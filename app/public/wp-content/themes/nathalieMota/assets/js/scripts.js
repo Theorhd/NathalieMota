@@ -20,8 +20,39 @@ jQuery(document).ready(function () {
             closeContact();
         }
     });
+    jQuery('.close-contact').click(function (){ // Fermeture de la modale au clic sur le bouton
+        closeContact();
+    });
     if (refphotoJS) { // Si une réf photo est disponible, on ajoute la valeur dans le champ adapté
         jQuery('.ref-photo-cont span input').val(refphotoJS);
     }
+});
+/**/
+/* Menu Nav Mobile */
+$(document).ready(function() {
+    let mobileMenu = document.querySelector('.mobile-menu');
+    let menuToggle = document.querySelector('.menu-toggle');
+    function menuOpen() {
+        menuToggle.classList.add('open');
+        mobileMenu.style.display = 'flex';
+            setTimeout(() => {
+                mobileMenu.classList.add('open');
+            }, 100);
+    }
+    function menuClose() {
+        menuToggle.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        setTimeout(() => {
+            mobileMenu.style.display = 'none';
+        }, 500);
+    }
+    $('.menu-toggle').click(function() {
+        if (mobileMenu.style.display === 'none') {
+            menuOpen();
+        }
+        else {
+            menuClose();
+        }
+    });
 });
 /**/

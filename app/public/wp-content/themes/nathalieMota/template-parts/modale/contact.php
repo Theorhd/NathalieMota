@@ -1,4 +1,5 @@
 <div class="contact-overlay">
+    <div class="close-contact"></div>
     <div class="popup-contact">
         <div class="popup-header">
         </div>
