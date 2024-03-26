@@ -103,8 +103,12 @@ function load_more_photos() {
           $custom_query->the_post();
           $image_url = get_field('image')['url'];
           $post_url  = get_permalink();
+          $post_id   = get_the_ID();
+          $refphoto = get_field('ref_photo');
+          $category = get_the_category()[0]->name;
+
           if ($image_url) {
-              echo '<a href="' . $post_url . '"><img src="' . esc_url($image_url) . '" alt="' . esc_attr(get_the_title()) . '"></a>';
+            echo '<a href="' . $post_url . '" class="post-link"><div class="image-overlay"><button class="overlay-fullscreen" data-photourl="' . $image_url . '" data-ref="' . $refphoto .'" data-category="' . $category .'"></button><div class="overlay-logo"></div><div class="overlay-infos"><p>' . $refphoto . '</p><p>' . $category . '</p></div></div><img src="' . esc_url($image_url) . '" alt="' . esc_attr(get_the_title()) . '"></a>';
           }
       endwhile;
       wp_reset_postdata();
