@@ -36,11 +36,11 @@ include './wp-content\themes\nathalieMota\assets\php\block_photo.php';
                         <div class="post-image-paysage" style="background-image: url('<?php echo $image['url']; ?>')">
                         </div>
                         <div class="nextPhoto">
-                            <div class="nextImage" style="background-image: url( <?php echo $next_post_image ?> );">
+                            <div class="nextImage" style="background-image: url();">
                             </div>
                             <div class="arrows">
-                                <a href="<?php echo $prev_post_url ; ?>"><span class="dashicons dashicons-arrow-left-alt2"></span></a>
-                                <a href="<?php echo $next_post_url ; ?>"><span class="dashicons dashicons-arrow-right-alt2"></span></a>
+                                <a class="prev-arrow" href="<?php echo $prev_post_url ; ?>"><span class="dashicons dashicons-arrow-left-alt2"></span></a>
+                                <a class="next-arrow" href="<?php echo $next_post_url ; ?>"><span class="dashicons dashicons-arrow-right-alt2"></span></a>
                             </div>
                             
                         </div>
@@ -74,11 +74,11 @@ include './wp-content\themes\nathalieMota\assets\php\block_photo.php';
                         <div class="post-image-portrait" style="background-image: url('<?php echo $image['url']; ?>')">
                         </div>
                         <div class="nextPhoto">
-                            <div class="nextImage" style="background-image: url(<?php echo $next_post_image; ?>);">
+                            <div class="nextImage" style="background-image: url();">
                             </div>
                             <div class="arrows">
-                                <a href="<?php echo $prev_post_url ; ?>"><span class="dashicons dashicons-arrow-left-alt2"></span></a>
-                                <a href="<?php echo $next_post_url ; ?>"><span class="dashicons dashicons-arrow-right-alt2"></span></a>
+                                <a class="prev-arrow" href="<?php echo $prev_post_url ; ?>"><span class="dashicons dashicons-arrow-left-alt2"></span></a>
+                                <a class="next-arrow" href="<?php echo $next_post_url ; ?>"><span class="dashicons dashicons-arrow-right-alt2"></span></a>
                             </div>
                             
                         </div>

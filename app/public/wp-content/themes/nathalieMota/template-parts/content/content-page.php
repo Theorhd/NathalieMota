@@ -50,8 +50,9 @@ include './wp-content\themes\nathalieMota\assets\php\block_photo.php';
     </div>
     <div class="posts-container">
         <?php
-            // Code présent dans le ficiher assets/js/ajax_pagination.js 
+            // Code présent dans le ficiher assets/js/ajax_pagination.js et functions.php
             // ajax_pagination.js charge les photos en AJAX et permet le fonctionnement du bouton "Afficher plus" et des filtres
+            // functions.php contient les fonctions PHP qui permettent de charger les photos en AJAX
         ?>
     </div>
     <div class="load-more">
