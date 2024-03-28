@@ -24,23 +24,24 @@
         }
     }
     .popup-header {
-        width: 135%;
+        width: 100%;
         height: 80px;
         overflow: hidden;
         background-image: url(../nathalieMota/assets/images/Contactheader.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: center;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
     .popup-contact {
+        width: 40%;
         max-width: 680px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-        padding: 3em;
         background-color: white;
         .popup-form p label span input {
             border: 1px solid #B8BBC2;
@@ -48,7 +49,7 @@
             width: 263px;
             height: 40px;
             padding-left: 10px;
-            margin-bottom: 8px;
+            margin-bottom: 15px;
         }
         .popup-form p label span textarea {
             border: 1px solid #B8BBC2;
@@ -66,7 +67,8 @@
             border-radius: 2px;
             color: black;
             text-align: center;
-            margin-top: 8px;
+            margin-top: 10px;
+            margin-bottom: 30px;
         }
     }
 }

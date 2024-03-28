@@ -15,6 +15,78 @@
         -webkit-text-stroke: 3px #fff;
     }
 }
+
+.custom-select {
+    position: relative;
+    width: 100%;
+    min-width: 210px;
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    &.open {
+        .placeholder::after {
+            transform: rotate(-90deg);
+        }
+      ul {
+        display: block;
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .placeholder {
+        padding: 12px 60px;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        cursor: pointer;
+        &::after {
+            display: inline-block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-image: url("./assets/images/chevron.svg");
+            background-position: center;
+            background-size: cover;
+            margin-left: 20px;
+            transform: rotate(90deg);
+            transition: all 0.2s linear;
+        }
+    }
+    ul {
+        display: none;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        border-top: none;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all 1s ease-in;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        text-align: center;
+        align-content: center;
+        width: 90%;
+        height: 42px;
+        padding: 10px;
+        background-color: #fff; 
+        border-radius: 8px;
+        &:hover {
+            background-color: #f00; 
+            color: #fff; 
+        }
+        &.selected {
+            background-color: #f00;
+            color: #fff;
+        }
+    }
+  }
+
 .main-page {
     margin: 20px 150px;
     overflow: hidden;
@@ -29,6 +101,7 @@
             margin-left: 15px;
         }
         .filterstyle {
+            display: none;
             width: 100%;
             height: 42px;
             max-width: 260px;
@@ -43,8 +116,8 @@
             color: #313144;
             option {
                 width: fit-content;
-                height: 42px;
-            }   
+                height: 42px; 
+            }
         }
     }
     .posts-container {
