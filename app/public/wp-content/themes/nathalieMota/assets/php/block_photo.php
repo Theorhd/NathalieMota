@@ -40,7 +40,6 @@ else { // Si next post n'existe pas alors montré le premier article
     // Get the URL of the first post
     $next_post_url = get_permalink($next_post_id);
 }
-
 //* Requête pour récupérer le post précédent avec l'image *//
 $prev_post = get_previous_post();
 if ($prev_post) {
@@ -49,6 +48,23 @@ if ($prev_post) {
     // Obtient l'url du post précédent
     $prev_post_url = get_permalink($prev_post_id);
 }
+?>
+<script> // Gestion de l'affichage des images suivantes et précédentes au hover des fleches
+    document.addEventListener('DOMContentLoaded', function() {
+        const prevArrow = document.querySelector('.prev-arrow');
+        const nextArrow = document.querySelector('.next-arrow');
+        const nextImage = document.querySelector('.nextImage');
+
+        prevArrow.addEventListener('mouseover', function() {
+            nextImage.style.backgroundImage = 'url(<?php if($prev_post_image) { echo $prev_post_image; } else { echo 'no image found'; } ?>)';
+        });
+
+        nextArrow.addEventListener('mouseover', function() {
+            nextImage.style.backgroundImage = 'url(<?php if($next_post_image) { echo $next_post_image; } else { echo 'no image found'; } ?>)';
+        });
+    });
+</script>
+<?php
 //* Chargement des photos associées aux images *//
 if ($categories) {
     // Obtient le slug de la première catégorie
