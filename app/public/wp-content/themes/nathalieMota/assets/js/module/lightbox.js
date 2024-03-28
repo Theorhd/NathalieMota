@@ -33,9 +33,15 @@ class Lightbox {
         }, 500);
         document.removeEventListener('keyup', this.onKeyUp);
     }
-    onKeyUp(e) { // Gestion de la touche Escape pour fermer la lightbox
-        if (e.key === 'Escape') {
+    onKeyUp(e) { // Gestion d'attributs de touche clavier
+        if (e.key === 'Escape') { // fermeture de la lightbox avec la touche "Escape"
             this.close(e);
+        }
+        if (e.key === 'ArrowRight') { // Navigation suivante avec la touche "ArrowRight"
+            this.next(e);
+        }
+        if (e.key === 'ArrowLeft') { // Navigation précédente avec la touche "ArrowLeft"
+            this.prev(e);
         }
     }
     next(e) { // Gestion de la navigation suivante
@@ -89,24 +95,30 @@ class Lightbox {
 }
 
 function load_lightbox() { // Gestion du chargement de la lightbox
-    setTimeout(() => {  // Attend 1 seconde pour que les images soient chargées en Ajax
+    setTimeout(() => {  // Attend 0.5 seconde pour que les images soient chargées en Ajax
         Lightbox.init();
-    }, 1000);
+    }, 500);
 }   
 const load_more_photos = document.querySelectorAll('#load-more-photos');
 const filters = document.querySelectorAll('.filterstyle');
+const custom_select = document.querySelectorAll('.custom-select ul li');
 /* Event Listener */
 document.addEventListener('DOMContentLoaded', () => { // Initialisation de la lightbox au chargement de la page
     load_lightbox();
-});
+
     filters.forEach(element => { // Boucle pour appliqué l'eventListerner sur chaque filtre
         element.addEventListener('change', function() { // Recharge la lightbox après avoir changé un filtre
             load_lightbox();
         });
+    });
+    $('.custom-select ul li').on('click', function() { // Ecouter le clic sur les filtres personnalisés
+        load_lightbox();
     });
     load_more_photos.forEach(element => { // Boucle pour appliqué l'eventListerner sur chaque bouton de chargement
         element.addEventListener('click', function() { // Recharge la lightbox après avoir chargé plus d'images
             load_lightbox();
         });
     });
+
+});
 /* * */
