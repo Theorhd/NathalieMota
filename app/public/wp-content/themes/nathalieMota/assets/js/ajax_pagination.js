@@ -7,6 +7,10 @@ jQuery(document).ready(function($) {
         page = 1;
         loadPhotos();
     });
+    $('.custom-select ul li').on('click', function() {
+        page = 1;
+        loadPhotos();
+    });
     $('#load-more-photos').on('click', function() {
         if(canLoad) {
             page++;
