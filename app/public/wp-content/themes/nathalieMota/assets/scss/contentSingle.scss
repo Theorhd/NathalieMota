@@ -6,13 +6,13 @@
     margin-top: 50px;
     border-bottom: 1px solid #000;
     .left-side-paysage {
-        width: 40%;
+        width: 49%;
         h2 {
             font-weight: 600;
             text-transform: uppercase;
         }
         p {
-            line-height: 30px;
+            line-height: 40px;
             text-transform: uppercase;
             &:nth-child(6) {
                 margin-bottom: 20px;
@@ -45,13 +45,13 @@
         }
     }
     .right-side-paysage {
-        width: 40%;
+        width: 49%;
         margin-left: 20px;
         overflow: hidden;
         .post-image-paysage {
             width: 100%;
             height: 400px;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -144,13 +144,13 @@
 /* Format : Portrait */
 .content-container {
     .left-side-portrait {
-        width: 40%;
+        width: 49%;
         h2 {
             font-weight: 600;
             text-transform: uppercase;
         }
         p {
-            line-height: 30px;
+            line-height: 40px;
             text-transform: uppercase;
             &:nth-child(6) {
                 margin-bottom: 20px;
@@ -183,16 +183,16 @@
         }
     }
     .right-side-portrait {
-        width: 40%;
+        width: 49%;
         margin-left: 20px;
         overflow: hidden;
         .post-image-portrait {
             width: 100%;
             height: 800px;
             max-height: 800px;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: right;
         }
         .nextPhoto {
             width: 97%;

@@ -1529,3 +1529,82 @@ Stack trace:
 [28-Mar-2024 16:41:18 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
 [28-Mar-2024 16:41:18 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
 [28-Mar-2024 16:41:18 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:47:13 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:47:13 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:47:13 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:47:15 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[28-Mar-2024 16:47:42 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:47:42 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:47:42 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:47:48 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:47:48 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:47:48 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:51:21 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:51:21 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:51:21 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:51:33 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:51:33 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:51:33 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:51:56 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[28-Mar-2024 16:52:01 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:52:01 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:52:01 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:52:38 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:52:38 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:52:38 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:53:05 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:53:05 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:53:05 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:53:54 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:53:54 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:53:54 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:54:47 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:54:47 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:54:47 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:55:40 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:55:40 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:55:40 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:55:50 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:55:50 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:55:50 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:56:15 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:56:15 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:56:15 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:56:18 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:56:18 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:56:18 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:56:20 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:56:20 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:56:20 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:56:22 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[28-Mar-2024 16:56:34 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[28-Mar-2024 16:56:47 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:56:47 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:56:47 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:57:28 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:57:28 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:57:28 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:57:44 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:57:44 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:57:44 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:58:12 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:58:12 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:58:12 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:58:13 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[28-Mar-2024 16:58:15 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:58:15 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:58:15 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:58:17 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[28-Mar-2024 16:58:20 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:58:20 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:58:20 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:58:53 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:58:53 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:58:53 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:58:54 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[28-Mar-2024 16:59:28 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[28-Mar-2024 16:59:28 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[28-Mar-2024 16:59:28 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[28-Mar-2024 16:59:31 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[28-Mar-2024 17:00:19 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[28-Mar-2024 17:00:54 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59

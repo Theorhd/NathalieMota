@@ -253,14 +253,14 @@ footer a {
   border-bottom: 1px solid #000;
 }
 .content-container .left-side-paysage {
-  width: 40%;
+  width: 49%;
 }
 .content-container .left-side-paysage h2 {
   font-weight: 600;
   text-transform: uppercase;
 }
 .content-container .left-side-paysage p {
-  line-height: 30px;
+  line-height: 40px;
   text-transform: uppercase;
 }
 .content-container .left-side-paysage p:nth-child(6) {
@@ -292,14 +292,14 @@ footer a {
   transition: 0.5s;
 }
 .content-container .right-side-paysage {
-  width: 40%;
+  width: 49%;
   margin-left: 20px;
   overflow: hidden;
 }
 .content-container .right-side-paysage .post-image-paysage {
   width: 100%;
   height: 400px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -387,14 +387,14 @@ footer a {
 /**/
 /* Format : Portrait */
 .content-container .left-side-portrait {
-  width: 40%;
+  width: 49%;
 }
 .content-container .left-side-portrait h2 {
   font-weight: 600;
   text-transform: uppercase;
 }
 .content-container .left-side-portrait p {
-  line-height: 30px;
+  line-height: 40px;
   text-transform: uppercase;
 }
 .content-container .left-side-portrait p:nth-child(6) {
@@ -426,7 +426,7 @@ footer a {
   transition: 0.2s;
 }
 .content-container .right-side-portrait {
-  width: 40%;
+  width: 49%;
   margin-left: 20px;
   overflow: hidden;
 }
@@ -434,9 +434,9 @@ footer a {
   width: 100%;
   height: 800px;
   max-height: 800px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
 }
 .content-container .right-side-portrait .nextPhoto {
   width: 97%;
