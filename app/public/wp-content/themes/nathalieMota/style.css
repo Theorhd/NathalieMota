@@ -194,23 +194,24 @@ footer a {
   opacity: 1;
 }
 .contact-overlay .popup-header {
-  width: 135%;
+  width: 100%;
   height: 80px;
   overflow: hidden;
   background-image: url(../nathalieMota/assets/images/Contactheader.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .contact-overlay .popup-contact {
+  width: 40%;
   max-width: 680px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  padding: 3em;
   background-color: white;
 }
 .contact-overlay .popup-contact .popup-form p label span input {
@@ -219,7 +220,7 @@ footer a {
   width: 263px;
   height: 40px;
   padding-left: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 .contact-overlay .popup-contact .popup-form p label span textarea {
   border: 1px solid #B8BBC2;
@@ -237,7 +238,8 @@ footer a {
   border-radius: 2px;
   color: black;
   text-align: center;
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /*<<<<<<<< ------ >>>>>>>>*/
@@ -519,6 +521,75 @@ footer a {
   -webkit-text-stroke: 3px #fff;
 }
 
+.custom-select {
+  position: relative;
+  width: 100%;
+  min-width: 210px;
+  font-family: "poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.custom-select.open .placeholder::after {
+  transform: rotate(-90deg);
+}
+.custom-select.open ul {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+.custom-select .placeholder {
+  padding: 12px 60px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.custom-select .placeholder::after {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url("./assets/images/chevron.svg");
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+  transform: rotate(90deg);
+  transition: all 0.2s linear;
+}
+.custom-select ul {
+  display: none;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border-top: none;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 1s ease-in;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.custom-select li {
+  text-align: center;
+  align-content: center;
+  width: 90%;
+  height: 42px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.custom-select li:hover {
+  background-color: #f00;
+  color: #fff;
+}
+.custom-select li.selected {
+  background-color: #f00;
+  color: #fff;
+}
+
 .main-page {
   margin: 20px 150px;
   overflow: hidden;
@@ -535,6 +606,7 @@ footer a {
   margin-left: 15px;
 }
 .main-page .filter-container .filterstyle {
+  display: none;
   width: 100%;
   height: 42px;
   max-width: 260px;
@@ -713,7 +785,7 @@ footer a {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5647058824);
+  background: rgba(0, 0, 0, 0.9);
   justify-content: space-around;
   align-items: center;
   width: 100%;
