@@ -111,6 +111,13 @@ document.addEventListener("DOMContentLoaded", function() {
           placeholder.textContent = option.textContent;
           select.classList.remove("open");
           option.classList.add("selected");
+          if (option.classList.contains("selected")) {
+            options.forEach(function(otherOption) {
+              if (otherOption !== option) {
+                otherOption.classList.remove("selected");
+              }
+            });
+          }
 
           // Mettre à jour la valeur du sélecteur d'origine
           var originalSelect;
