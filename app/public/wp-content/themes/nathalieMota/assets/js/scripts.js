@@ -23,8 +23,10 @@ jQuery(document).ready(function () {
     jQuery('.close-contact').click(function (){ // Fermeture de la modale au clic sur le bouton
         closeContact();
     });
-    if (refphotoJS) { // Si une réf photo est disponible, on ajoute la valeur dans le champ adapté
-        jQuery('.ref-photo-cont span input').val(refphotoJS);
+    if (window.location.pathname.includes('/photo/')) { // exécution du script uniquement sur les pages de photos
+      if (refphotoJS) { // Si une référence photo est définie
+        jQuery('.ref-photo-cont span input').val(refphotoJS); // Mettre à jour la valeur de l'input avec la référence photo dans la modale de contact
+      }
     }
 });
 /**/
