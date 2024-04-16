@@ -127,14 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
 });
 
-// Fermer le menu déroulant si l'utilisateur clique en dehors
-document.addEventListener("click", function(e) {
-  if (!e.target.closest(".custom-select")) {
-    document.querySelectorAll(".custom-select").forEach(function(select) {
-      select.classList.remove("open");
-    });
-  }
-});
+
   }
 });
 
