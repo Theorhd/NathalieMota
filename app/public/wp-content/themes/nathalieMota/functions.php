@@ -88,7 +88,7 @@ function load_more_photos() {
           ),
       );
   }
-  if ($sort != 'all') {
+  if ($sort != 'all') { // Trier par date
     if ($sort == 'date+') {
         $args['orderby'] = 'date';
         $args['order']   = 'DESC';

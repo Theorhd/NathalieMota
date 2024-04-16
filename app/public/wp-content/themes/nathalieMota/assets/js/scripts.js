@@ -60,58 +60,53 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", function() {
   if (window.location.pathname === '/') { // Exécution du script uniquement sur la page d'accueil
     // Sélecteur de catégories
-    var categoriesDropdown = document.getElementById("filter-categories-dropdown");
-    var categoriesContainer = document.querySelector(".filter-categories");
-
+    const categoriesDropdown = document.getElementById("filter-categories-dropdown");
+    const categoriesContainer = document.querySelector(".filter-categories");
     // Création du nouveau sélecteur stylisé pour les catégories
-    var categoriesSelect = document.createElement("div");
+    const categoriesSelect = document.createElement("div");
     categoriesSelect.classList.add("custom-select");
     categoriesSelect.innerHTML = '<span class="placeholder">Catégories</span><ul><li data-value="all">Toutes</li><li data-value="concert">Concert</li><li data-value="mariage">Mariage</li><li data-value="reception">Réception</li><li data-value="television">Télévision</li></ul>';
-
     // Insérer le nouveau sélecteur stylisé avant l'ancien sélecteur
     categoriesContainer.insertBefore(categoriesSelect, categoriesDropdown);
 
     // Sélecteur de formats
-    var formatsDropdown = document.getElementById("filter-formats-dropdown");
-    var formatsContainer = document.querySelector(".filter-formats");
-
+    const formatsDropdown = document.getElementById("filter-formats-dropdown");
+    const formatsContainer = document.querySelector(".filter-formats");
     // Création du nouveau sélecteur stylisé pour les formats
-    var formatsSelect = document.createElement("div");
+    const formatsSelect = document.createElement("div");
     formatsSelect.classList.add("custom-select");
     formatsSelect.innerHTML = '<span class="placeholder">Formats</span><ul><li data-value="all">Tous</li><li data-value="portrait">Portrait</li><li data-value="paysage">Paysage</li></ul>';
-
     // Insérer le nouveau sélecteur stylisé avant l'ancien sélecteur
     formatsContainer.insertBefore(formatsSelect, formatsDropdown);
 
     // Sélecteur de tri
-    var sortDropdown = document.getElementById("sort-dropdown");
-    var sortContainer = document.querySelector(".sort");
-
+    const sortDropdown = document.getElementById("sort-dropdown");
+    const sortContainer = document.querySelector(".sort");
     // Création du nouveau sélecteur stylisé pour le tri
-    var sortSelect = document.createElement("div");
+    const sortSelect = document.createElement("div");
     sortSelect.classList.add("custom-select");
     sortSelect.innerHTML = '<span class="placeholder">Trier par</span><ul><li data-value="all">Tous</li><li data-value="date+">Plus récent</li><li data-value="date-">Plus ancien</li></ul>';
-
     // Insérer le nouveau sélecteur stylisé avant l'ancien sélecteur
     sortContainer.insertBefore(sortSelect, sortDropdown);
 
+
+
     // Fonction pour ouvrir/fermer le menu déroulant
     document.querySelectorAll(".custom-select").forEach(function(select) {
-      var placeholder = select.querySelector(".placeholder");
-      var options = select.querySelectorAll("li");
+      let placeholder = select.querySelector(".placeholder");
+      let options = select.querySelectorAll("li");
       const selectBase = document.querySelector('.filterstyle');
 
-
-      placeholder.addEventListener("click", function() {
+      placeholder.addEventListener("click", function() { // EventListener ouverture/fermeture du menu déroulant
         select.classList.toggle("open");
       });
 
       options.forEach(function(option) {
-        option.addEventListener("click", function() {
+        option.addEventListener("click", function() { // EventListener selection d'une option
           placeholder.textContent = option.textContent;
           select.classList.remove("open");
           option.classList.add("selected");
-          if (option.classList.contains("selected")) {
+          if (option.classList.contains("selected")) { // Désélectionner les autres options si une autre option est sélectionnée
             options.forEach(function(otherOption) {
               if (otherOption !== option) {
                 otherOption.classList.remove("selected");
@@ -119,8 +114,8 @@ document.addEventListener("DOMContentLoaded", function() {
             });
           }
 
-          // Mettre à jour la valeur du sélecteur d'origine
-          var originalSelect;
+          // Mettre à jour la valeur du sélecteur d'origine pour permettre le filtrage en Ajax
+          let originalSelect;
           if (select === categoriesSelect) {
             originalSelect = categoriesDropdown;
           } else if (select === formatsSelect) {
@@ -133,9 +128,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
       });
 });
-
-
-  }
+}
 });
-
 /* */
