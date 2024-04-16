@@ -1967,3 +1967,35 @@ Stack trace:
 [16-Apr-2024 13:18:26 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
 [16-Apr-2024 13:18:26 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
 [16-Apr-2024 13:18:50 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[16-Apr-2024 13:20:56 UTC] PHP Warning:  Undefined variable $random_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\template-parts\content\content-page.php on line 15
+[16-Apr-2024 13:21:11 UTC] PHP Warning:  Undefined variable $prev_post_image in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 59
+[16-Apr-2024 13:22:30 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[16-Apr-2024 13:22:30 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[16-Apr-2024 13:22:30 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[16-Apr-2024 13:24:30 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[16-Apr-2024 13:24:30 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[16-Apr-2024 13:24:30 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[16-Apr-2024 13:24:31 UTC] PHP Warning:  Undefined variable $refphoto in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 118
+[16-Apr-2024 13:25:07 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[16-Apr-2024 13:25:07 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[16-Apr-2024 13:25:07 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[16-Apr-2024 13:25:11 UTC] PHP Warning:  Undefined variable $refphoto in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 118
+[16-Apr-2024 13:27:57 UTC] PHP Warning:  Undefined variable $refphoto in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 118
+[16-Apr-2024 13:28:54 UTC] PHP Warning:  Undefined variable $refphoto in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\assets\php\block_photo.php on line 118
+[16-Apr-2024 13:30:14 UTC] PHP Warning:  Undefined array key "categories" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 63
+[16-Apr-2024 13:30:14 UTC] PHP Warning:  Undefined array key "formats" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 64
+[16-Apr-2024 13:30:14 UTC] PHP Warning:  Undefined array key "sort" in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-content\themes\nathalieMota\functions.php on line 65
+[16-Apr-2024 13:31:51 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "load_more_photos" not found or invalid function name in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_load_mo...')
+#3 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\class-wp-hook.php on line 324
+[16-Apr-2024 13:32:05 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "load_more_photos" not found or invalid function name in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\theor\Local Sites\nathaliemota\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_load_mo...')
+#3 {main}
+  thrown in C:\Users\theor\Local Sites\nathaliemota\app\public\wp-includes\class-wp-hook.php on line 324
