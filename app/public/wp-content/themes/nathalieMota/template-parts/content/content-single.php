@@ -49,8 +49,8 @@ include './wp-content\themes\nathalieMota\assets\php\block_photo.php';
                 <div class="alsoLike-container">
                     <h3>Vous aimerez aussi</h3>
                     <div class="alsoLike-photos">
-                        <a href="<?php echo $same_image1_link ; ?>" class="alsoLike-photo1" style="background-image: url('<?php echo $same_image1 ; ?>')"></a>
-                        <a href="<?php echo $same_image2_link ; ?>" class="alsoLike-photo2" style="background-image: url('<?php echo $same_image2 ; ?>')"></a>
+                        <a href="<?php echo $same_image1_link ; ?>" class="alsoLike-photo1" style="background-image: url('<?php echo $same_image1 ; ?>')"><div class="image-overlay"><button class="overlay-fullscreen" data-photourl="<?php echo $same_image1_link ?>" data-ref="<?php echo $same_image1_ref ?>" data-category="<?php echo $same_image1_cat ?>"></button><div class="overlay-logo"></div><div class="overlay-infos"><p><?php echo $same_image1_ref ?></p><p><?php echo $same_image1_cat ?></p></div></div></a>
+                        <a href="<?php echo $same_image2_link ; ?>" class="alsoLike-photo2" style="background-image: url('<?php echo $same_image2 ; ?>')"><div class="image-overlay"><button class="overlay-fullscreen" data-photourl="<?php echo $same_image2_link ?>" data-ref="<?php echo $same_image2_ref ?>" data-category="<?php echo $same_image2_cat ?>"></button><div class="overlay-logo"></div><div class="overlay-infos"><p><?php echo $same_image2_ref ?></p><p><?php echo $same_image2_cat ?></p></div></div></a>
                     </div>
                 </div>
             </div>
