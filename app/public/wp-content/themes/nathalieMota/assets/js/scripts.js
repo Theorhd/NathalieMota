@@ -31,7 +31,7 @@ jQuery(document).ready(function () {
 });
 /**/
 /* Menu Nav Mobile */
-$(document).ready(function() {
+jQuery(document).ready(function() {
     let mobileMenu = document.querySelector('.mobile-menu');
     let menuToggle = document.querySelector('.menu-toggle');
     function menuOpen() {
@@ -48,7 +48,7 @@ $(document).ready(function() {
             mobileMenu.style.display = 'none';
         }, 500);
     }
-    $('.menu-toggle').click(function() {
+    jQuery('.menu-toggle').click(function() {
         if (mobileMenu.style.display === 'none') {
             menuOpen();
         }

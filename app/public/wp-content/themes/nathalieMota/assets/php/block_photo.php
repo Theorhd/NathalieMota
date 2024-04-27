@@ -88,21 +88,33 @@ if (is_singular('photo')) {
                 $article_url = get_permalink();
                 // Récupère l'URL de l'image à partir du champ personnalisé 'image'
                 $image_url = get_field($custom_field_name);
+                // Récupère la référence de la photo
+                $refphoto = get_field('ref_photo');
+                // Récupère le slug de la première catégorie
+                $categories = get_the_category();
+                $category_slug = $categories[0]->slug;
+
                 // Vérifie si l'identifiant de l'article correspond à l'article actuel
                 if ($image_url && get_the_ID() !== $current_post_id) {
-                    // Stocke l'URL de l'image et l'URL de l'article dans un tableau
+                    // Stocke l'URL de l'image, l'URL de l'article, la catégorie et la référence dans un tableau
                     $images_and_links[] = array(
                         'image_url' => $image_url['url'],
                         'article_link' => $article_url,
+                        'category' => $category_slug,
+                        'ref' => $refphoto,
                     );
                     // Assignation des valeurs
                     if (isset($images_and_links[0])) {
                         $same_image1 = $images_and_links[0]['image_url'];
                         $same_image1_link = $images_and_links[0]['article_link'];
+                        $same_image1_ref = $images_and_links[0]['ref'];
+                        $same_image1_cat = $images_and_links[0]['category'];
                     }
                     if (isset($images_and_links[1])) {
                         $same_image2 = $images_and_links[1]['image_url'];
                         $same_image2_link = $images_and_links[1]['article_link'];
+                        $same_image2_ref = $images_and_links[1]['ref'];
+                        $same_image2_cat = $images_and_links[1]['category'];
                     }
                 } else {
                     continue;
@@ -111,7 +123,7 @@ if (is_singular('photo')) {
             wp_reset_postdata();
         }
     }
-?>
+    ?>
 <script>
     // Récupérer la valeur de $refphoto en JavaScript
     let refphotoJS = <?php echo json_encode($refphoto); ?>;
