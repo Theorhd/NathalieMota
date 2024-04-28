@@ -11,7 +11,6 @@ if (is_singular('photo')) {
     $type = get_field('type');
 
     /* Gestion des photos apparentées */
-    $custom_field_name = 'image';
     $categories = get_the_category();
     // Déclaration des variables
     $same_image1 = '';
@@ -38,7 +37,7 @@ if (is_singular('photo')) {
         ));
         $next_post_id = $next_post[0]->ID;
         $next_post_image = get_field('image', $next_post_id)['url'];
-        // Get the URL of the first post
+        // Obtient l'url du post suivant
         $next_post_url = get_permalink($next_post_id);
     }
     //* Requête pour récupérer le post précédent avec l'image *//
@@ -87,7 +86,7 @@ if (is_singular('photo')) {
                 // Récupère l'URL de l'article
                 $article_url = get_permalink();
                 // Récupère l'URL de l'image à partir du champ personnalisé 'image'
-                $image_url = get_field($custom_field_name);
+                $image_url = get_field('image');
                 // Récupère la référence de la photo
                 $refphoto = get_field('ref_photo');
                 // Récupère le slug de la première catégorie

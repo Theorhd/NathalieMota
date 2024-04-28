@@ -13,7 +13,7 @@
 
 <?php
 // Code de focntionnement de la page Single
-include './wp-content\themes\nathalieMota\assets\php\block_photo.php'; 
+include './wp-content/themes/nathalieMota/assets/php/block_photo.php'; 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -95,7 +95,7 @@ include './wp-content\themes\nathalieMota\assets\php\block_photo.php';
 
         <?php
         wp_link_pages( array(
-            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'your-theme-text-domain' ),
+            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nathalieMota' ),
             'after'  => '</div>',
         ) );
         ?>
