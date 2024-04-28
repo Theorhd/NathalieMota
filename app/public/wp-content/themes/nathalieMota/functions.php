@@ -59,10 +59,10 @@ add_action('wp_ajax_load_more_photos', 'load_more_photos');
 add_action('wp_ajax_nopriv_load_more_photos', 'load_more_photos');
   // Chargement des photos page accueil et filtres AJAX
 function load_more_photos() {
-  $page = $_POST['page'];
-  $categories = $_POST['categories'];
-  $formats = $_POST['formats'];
-  $sort = $_POST['sort'];
+  $page = isset($_POST['page']) ? $_POST['page'] : '';
+  $categories = isset($_POST['categories']) ? $_POST['categories'] : '';
+  $formats = isset($_POST['formats']) ? $_POST['formats'] : '';
+  $sort = isset($_POST['sort']) ? $_POST['sort'] : '';
 
   $args = array(
       'post_type'      => 'photo',
